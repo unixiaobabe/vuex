@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import countModule from './module/countModule'
+import listModule from './module/listModule'
+
 Vue.use(Vuex)
 
-import catagoryModule from './module/catagory'
-import listModule from './module/list'
 const store = new Vuex.Store({
     modules:{
-        catasM:catagoryModule,
+        countM:countModule,
         listM:listModule
     }
 })
